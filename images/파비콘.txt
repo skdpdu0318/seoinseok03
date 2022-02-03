@@ -1,0 +1,18 @@
+파비콘 16*16 사이즈가 규격
+해상도를위해 제작 시 32*32 로 만든다
+
+일반적으로 jpg 나 png 로 제작 후 
+.ico
+-> 확장자로 변환 포토샵,일러스트 x
+
+   <meta property="og:url"                content="주소" />
+   <meta property="og:type"               content="컨텐츠내용" />
+   <meta property="og:title"              content="사이트명" />
+   <meta property="og:description"        content="설명" />
+   <meta property="og:image"              content="링크썸네일주소" />
+
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+<link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+<link rel="icon" href="/favicon.ico" type="image/x-icon">

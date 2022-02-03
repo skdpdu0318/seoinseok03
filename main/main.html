@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content=""/>
+    <meta name="keywords" content="" />
+    <meta name="author" content=""/>
+    <title>YUNHEE FC</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <link href="../css/common.css"  rel="stylesheet" type="text/css" />
+    <link href="../css/main/pc.css"  rel="stylesheet" type="text/css" />
+    <link href="../css/main/mobile.css"  rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="../css/common.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/fontawesome.css">
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+</head>
+<body>
+<a id="topBtn" href="#">TOP</a><!--탑버튼-->
+<div class="modal_background"></div>
+<div class="modal"><img src="../images/main/model.jpg" alt=""><p>닫기</p></div>
+<header>
+<div class="headerWrap">
+<div class="sns">
+    <ul>
+        <li><a href="#"><img src="../images/main/instapng.png" alt="유틸_인스타"></a></li>
+        <li><a href="#"><img src="../images/main/facebook.png" alt="유틸_페이스북"></a></li>
+        <li><a href="#"><img src="../images/main/youtube.png" alt="유틸_유튜브"></a></li>
+    </ul>
+</div>
+<div class="logo">
+    <a href="#"><img src="../images/main/emblem.png" alt="엠블럼"></a>
+</div>
+<div id="menu_btn">
+    <span></span>
+    <span></span>
+    <span></span>
+    </div>
+<div class="util">
+    <ul>
+        <li><a href="#">회원가입</a></li>
+        <li><a href="#">로그인</a></li>
+        <li><a href="#">마이페이지</a></li>
+    </ul>
+</div>
+</div>
+<nav class="gnb">
+    <ul>
+        <li id="btn"><a href="#"><img src="../images/main/btn.png" alt="햄버거버튼"></a></li>
+        <li><a href="#">연희FC</a>
+            <ul class="submenu">
+                <li><a href="#">구단소개</a></li>
+                <li><a href="#">구단역사</a></li>
+                <li><a href="#">엠블럼 소개</a></li>
+                <li><a href="#">대표이사</a></li>
+            </ul>
+        </li>
+        <li><a href="#">선수단소개</a>
+            <ul class="submenu">
+                <li><a href="#">성인팀</a></li>
+                <li><a href="#">U-18</a></li>
+                <li><a href="#">코치진</a></li>
+            </ul>
+        </li>
+        <li><a href="#">기록실</a>
+            <ul class="submenu">
+            <li><a href="#">선수기록</a></li>
+            <li><a href="#">순위표</a></li>
+            </ul>
+        </li>
+        <li><a href="#">티켓</a>
+            <ul class="submenu">
+                <li><a href="#">티켓예매</a></li>
+                <li><a href="#">경기장안내</a></li>
+            </ul>            
+        </li>
+        <li><a href="#">SHOP</a>
+            <ul class="submenu">
+                <li><a href="#">유니폼</a></li>
+                <li><a href="#">트레이닝복</a></li>
+                <li><a href="#">축구화</a></li>
+                <li><a href="#">악세사리</a></li>
+            </ul>             
+        </li>
+        <li><a href="#">고객센터</a>
+                <ul class="submenu">
+                    <li><a href="#">공지사항</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">상품문의</a></li>
+                    <li><a href="#">중고장터</a></li>
+                </ul>             
+        </li>
+    </ul>
+</nav> 
+</header>
+<section class="slide_banner">
+    <h2>슬라이드 영역</h2>
+    <section class="jd-slider slider2">
+        <h2>무한루프 캐로셀</h2>
+        <div class="slide-inner">
+            <ul class="slide-area">
+                <li>
+                    <a href="#"><img src="../images/main/banner1.jpg" alt="slide1" class="topimg"/></a>
+                </li>
+                <li>
+                    <a href="#"><img src="../images/main/banner2.jpg" alt="slide2"/></a>
+                </li>
+                <li>
+                    <a href="#"><img src="../images/main/banner3.jpg" alt="slide3"/></a>
+                </li>
+            </ul>
+            <a class="prev" href="#">
+                <i class="fas fa-angle-left fa-2x"></i>
+            </a>
+            <a class="next" href="#">
+                <i class="fas fa-angle-right fa-2x"></i>
+            </a>
+        </div>
+        <div class="controller">
+            <a class="auto" href="#">
+                <i class="fas fa-play fa-xs"></i>
+                <i class="fas fa-pause fa-xs"></i>
+            </a>
+            <div class="indicate-area"></div>
+        </div>
+    </section>
+</section>
+<section class="rank_ruleWrap">
+    <h2>순위표,관람수칙 영역</h2>
+    <div class="rank_rule">
+        <table>
+            <tr class="rank_top">
+                <td>순위</td>
+                <td>구단</td>
+                <td>경기수</td>
+                <td>승</td>
+                <td>무</td>
+                <td>패</td>
+                <td>승점</td>
+            </tr>
+            <tr class="rank_second">
+                <td>1</td>
+                <td>연희FC</td>
+                <td>38</td>
+                <td>22</td>
+                <td>10</td>
+                <td>7</td>
+                <td>76</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>FC서울</td>
+                <td>38</td>
+                <td>21</td>
+                <td>12</td>
+                <td>7</td>
+                <td>74</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>전북현대</td>
+                <td>38</td>
+                <td>15</td>
+                <td>10</td>
+                <td>13</td>
+                <td>62</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>수원삼성</td>
+                <td>38</td>
+                <td>13</td>
+                <td>15</td>
+                <td>10</td>
+                <td>60</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>대구FC</td>
+                <td>38</td>
+                <td>14</td>
+                <td>10</td>
+                <td>15</td>
+                <td>55</td>
+            </tr>
+        </table>
+        <div class="rank_btn"><a href="#">전체순위 보기</a></div>
+        <div class="rule">
+           <!-- <img src="../images/frame2.png"> -->
+            <ul>
+                <li>안전한 경기 관람 수칙</li>
+                <li>마스크 필수 착용</li>
+                <li>발열 체크시 37.5˚C이상<br/>마스크 미착용시</li>
+                <li>경기장 입장 불가!!</li>
+            </ul>
+            <div class="rule_btn"><a href="#">자세히 보기</a></div>
+        </div>
+    </div>
+
+    </div>
+</section>
+<section class="onlineShop">
+    <h2>온라인샵 영역</h2>
+    <p>YH FC OFFICIAL ONLINE SHOP</p>
+    <div class="productWrap">
+        <div class="best_product">
+            <div class="shop_btn">
+            <a href="#">쇼핑몰 바로가기<div class="arrow"></div></a>
+            </div>
+            <p>Best Product</p>
+            <ul>
+                <li><img src="../images/main/product01.png" alt="상품1"><p>레터링 뱃지<br/><br/>5,000원</p></li>
+                <li><img src="../images/main/product02.png" alt="상품2"><p>레터링 뱃지<br/><br/>5,000원</p></li>
+                <li><img src="../images/main/product01.png" alt="상품3"><p>레터링 뱃지<br/><br/>5,000원</p></li>
+            </ul>
+        </div>
+        <div class="new_item">
+            <p>NEW ITEM</p>
+            <ul><li><img src="../images/main/new_product.png" alt="#"></li></ul>
+            <div class="new_btn"><a href="#">전체 보기</a></div>
+        </div>
+    </div>
+</section>
+<section class="NoticeAppInfo">
+    <h2>공지사항,앱,구단정보 영역</h2>
+    <div class="NAI_wrap">
+        <div class="Notice">
+            <ul>
+                <li><p>NOTICE</p><a href="#"><img src="../images/main/plus.png" alt="플러스버튼" class="plus"></a></li>
+                <li>
+                    <div class="Notice_left"><p><a href="#">입찰공고</a></p></div>
+                    <div class="Notice_right"><p><a href="#">광고물 위탁제작 및 관리자 모집 입찰공고</a></p>
+                    <span>2021.01.01</span></div>
+                </li>
+                <li>
+                    <div class="Notice_left"><p><a href="#">입찰공고</a></p></div>
+                    <div class="Notice_right"><p><a href="#">연희FC 웹예능 영상 콘텐츠 제작 대행사 선정 입찰 공고</a></p>
+                    <span>2021.01.01</span></div>
+                </li>
+                <li>
+                    <div class="Notice_left"><p><a href="#">공지사항</a></p></div>
+                    <div class="Notice_right"><p><a href="#">연희FC U18팀 신흥초 축구부 선수 상시 모집</a></p><span>2021.01.01</span></div>
+                </li>
+                <li>
+                    <div class="Notice_left"><p><a href="#">공지사항</a></p></div>
+                    <div class="Notice_right"><p><a href="#">2022 K리그1 경기 일정 확정 안내</a></p>
+                    <span>2021.01.01</span></div>
+                </li>
+            </ul>
+        </div>
+        <div class="App">
+            <p>Official App</p>
+            <h3>편리한 연희FC 공식 앱을 다운받아 보세요.</h3>
+            <ul>
+                <li><a href="#">안드로이드</a></li>
+                <li><a href="#">IOS</a></li>
+            </ul>
+            <div>
+                <ul>
+                    <li><img src="../images/main/phone.png" alt="연희APP_핸드폰이미지"></li>
+                    <li>YUN HEE FC</li>
+                </ul>
+            </div>
+        </div>
+            <div class="Info">
+            <ul>
+                <li class="Info01" onclick=window.location=("../sub/g-1-1.html")>
+                    <div>
+                    <p>연희FC 선수단</p>
+                    <h4>안녕하세요. 언제나</br>승리를 향한 열정 가득한</br>
+                    연희FC의 선수들을 둘러보세요.</h4>
+                    </div>
+                    <div><a href="#"></a></div>
+                </li>
+                <li class="Info02" onclick=window.location=("../sub/g-1-1.html")>
+                    <div>
+                    <p>연희FC 구단정보</p>
+                    <h3>구단 소개와 역사<br/>
+                        그리고 엠블럼 정보까지<br/>
+                        한눈에 알아보는<br/> 연희FC 구단정보
+                    </h3>
+                    </div>
+                    <div><a href="#"></a></div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+<section class="sns_contents">
+    <h2>sns 컨텐츠 영역</h2>
+    <p>#오늘의 연희FC</p>
+    <div class="sns_wrap">
+        <div class="sns_top">
+            <ul>
+                <li><a href="https://www.youtube.com/"><img src="../images/main/sns7.jpg" alt="#"></a>
+                <img src="../images/main/photo_youtube.png"
+                alt="#"><p>#국민 귀요미가 된 나은이의 첫 시축 도전기! 💙</p></li>
+                <li><a href="#"><img src="../images/main/sns5.jpg" alt="#"></a>
+                <img src="../images/main/photo_youtube.png"
+                alt="#"><p>#전역을 명 받았습니다! 돌아온 치타 서.인.석</p></li>
+                <li><a href="#"><img src="../images/main/sns6.jpeg" alt="#"></a>
+                <img src="../images/main/photo_youtube.png"
+                alt="#"><p>#연희FC 2022시즌 프로필 촬영현장!</p></li>
+                <li><a href="#"><img src="../images/main/sns3.jpg" alt="#"></a>
+                <img src="../images/main/photo_youtube.png"
+                alt="#"><p>[나는 감독이다] 호랑이 정백호의 BEST11은?</p></li>
+            </ul>
+        </div>
+        <div class="sns_bottom">
+            <ul>
+                <li><a href="#"><img src="../images/main/sns1.jpg" alt="#"/></a>
+                <img src="../images/main/photo_insta.png"
+                alt="#"><p>[#전지훈련] 사실상 아디다스 F/W 화보</p></li>
+                <li><a href="#"><img src="../images/main/sns4.jpg" alt="#"/></a>
+                <img src="../images/main/photo_insta.png"
+                alt="#"><p>새로 합류한 외국인 폴란드 국가대표 스트라이커, 존슨!</p></li>
+                <li><a href="#"><img src="../images/main/sns2.jpg" alt="#"/></a>
+                <img src="../images/main/photo_insta.png"
+                alt="#"><p>[#전지훈련] 거제 춥제?</p></li>
+            </ul>
+        </div>
+    </div>
+</section>
+<section class="sns_choice">
+    <h2>더 많은소식을 SNS채널을 통해 만나보세요!</h2>
+    <p>더 많은소식을 SNS채널을 통해 만나보세요!</p>
+    <div class="sns_bottom_img">
+        <ul>
+            <li><a href="#"><img src="../images/main/insta_color.png"></a></li>
+            <li><a href="#"><img src="../images/main/youtube_color.png"></a></li>
+            <li><a href="#"><img src="../images/main/facebook_color.png"></a></li>
+        </ul>
+    </div>
+</section>
+<section class="partner">
+    <h2>협력사 영역</h2>
+    <p>공식 파트너</p>
+    <ul class="partner_img">
+        <li><a href="#"><img src="../images/main/img01.png" alt=""></a></li>
+        <li><a href="#"><img src="../images/main/img02.png" alt=""></a></li>
+        <li><a href="#"><img src="../images/main/img03.png" alt=""></a></li>
+        <li><a href="#"><img src="../images/main/img04.png" alt=""></a></li>
+        <li><a href="#"><img src="../images/main/img05.png" alt=""></a></li>
+    </ul>
+</section>
+<footer>
+    <div>
+        <ul class="footer_top">
+            <li><a href="#">개인정보처리방침</a></li>
+            <li><a href="#">이용약관</a></li>
+            <li><a href="#">이메일무단수집거부</a></li>
+            <li><a href="#">사이트맵</a></li>
+            <li><a href="#">채용정보</a></li>
+        </ul>
+    </div>
+    <div class="line">&nbsp;</div>
+    <div class="footer_bottom">
+        <ul>
+            <li><a href="#"><img src="../images/main/emblem.png_w.png"></a></li>
+            <li>대표자명 : 여은주 ㅣ 대표전화 : 02 - 306 - 5050 ㅣ 개인정보책임자 : 이재근<br/>
+            서울시 마포구 월드컵로 240 서울월드컵경기장 내<br/>
+            Copyright@2019 GS Sports Football Club Seoul</li>
+            <li>
+                <ul class="footer_sns">
+                    <li><a href="#"><img src="../images/main/instapng.png" alt=""></a></li>
+                    <li><a href="#"><img src="../images/main/youtube.png" alt=""></a></li>
+                    <li><a href="#"><img src="../images/main/facebook.png" alt=""></a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</footer>
+<div>
+    
+</div>
+</body>
+<script src="../js/script.js"></script>
+<script src="../js/jquery.js"></script>
+<script src="../js/jquery.jdSlider-latest.min.js"></script>
+<script>
+    window.onload = function () {
+    
+    /*스크립트*/
+    $(".slider1").jdSlider();
+    $(".slider2").jdSlider({
+        wrap : ".slide-inner",
+        isAuto : true,
+        isLoop : true,
+        speed : 500,
+        interval : 2000
+    });
+    
+    $(".slider3").jdSlider({
+        wrap : '.slide-inner',
+        slideShow: 2,
+        slideToScroll: 2,
+        isLoop : false,
+        responsive: [{
+        viewSize: 768,
+        settings: {
+          slideShow: 1,
+          slideToScroll: 1
+        }
+    }]
+});
+};
+$("#menu_btn").click(function(){
+	$(".gnb>ul").fadeToggle(200);
+});
+</script>
+</html>

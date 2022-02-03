@@ -1,0 +1,1139 @@
+@charset "utf-8";
+@media all and (max-width:1023px){
+    .sns>ul::after,.util>ul::after,.slide>ul::after{
+        content:'';
+        display:block;
+        clear:both;
+        width:0; height:0;
+        visibility:hidden;
+    }
+    header{
+        width: 100%;
+        height:200px;
+        position: relative;
+    }
+    .headerWrap{
+        width:75%;
+    }
+    .sns>ul{
+        width:258.75px;
+    }
+    .sns>ul>li{
+        float:left;
+        margin-left:10px;
+    }
+    .sns>ul>li>a>img{
+        width: 30px;
+    }
+    .util{
+        position: absolute;
+        right: 5%;
+        top:3%;
+    }
+    .util>ul>li{
+        float:left;
+        margin-left:20px;
+    }
+    .util>ul>li:hover{
+        font-weight:bold;
+        transition:transform .3s;
+    }
+    .util>ul>li>a{
+        font-size:14px;
+    }
+    /*gnb 메뉴 맨앞에 햄버거 이미지버튼 감추기*/
+    .gnb>ul>li:nth-child(1){
+        display: none;
+    }
+    /*햄버거 버튼*/
+    #menu_btn{
+        display:block;
+        width:60px;
+        position:absolute;
+        top:45%;
+        right:5%;
+    }
+    #menu_btn>span{ 
+        display:block;
+        background:#1D4C8B;
+        width:100%;
+        height:6px;
+        transition:all .3s;
+    }
+    #menu_btn>span:nth-child(2){
+        margin:15px 0px;
+    }
+        
+    #menu_btn::after{
+        content:'';
+        display:block;
+        clear:both;
+        width:0; height:0;
+        visibility:hidden;
+    }
+    /*햄버거 버튼 끝*/
+    .gnb>ul{
+        width:100%;
+        margin:0px auto;
+        position:absolute;
+        display:none;
+        background:rgba(255,255,255,.9);
+        top:70px;
+    }
+    .gnb>ul>li:first-child>a{
+        border-top:1px solid #1D4C8B;
+    }
+    .gnb>ul>li>a, .submenu>li>a{
+        display:block;
+        padding:10px 0px 10px 30px;
+        border-bottom:1px solid #1D4C8B;
+        width:100%;
+    }
+    .gnb>ul>li>a:hover,.submenu>li>a:hover{
+        font-weight:900;
+        background:rgba(0,0,0,.1);
+    }
+    .submenu{display:none;}
+    
+    .submenu>li>a::before{content:'-';}
+    
+    .submenu>li>a{
+        font-size:0.9rem;
+    }
+    #btn>a:hover{
+        background: #0f204b;
+    }
+    
+    /*슬라이드관련 CSS*/
+    .slide_banner{
+        position:relative;
+    }
+    #slide{
+        width:100%;
+        height:600px;
+        overflow:hidden;
+        margin:0 auto;
+        position:relative;
+    }
+    .slide-inner{
+        overflow: hidden;
+    }
+    .slideWrap{width:5760px;}
+    
+    .slideWrap li{
+        width:1920px;
+        height:600px;
+        float:left;
+    }
+    
+    .photo{
+        width:1920px;
+        height:600px;
+        display:block;
+    }
+    .photo img{
+        height:100%;
+    }
+    .slideWrap::after{
+        content:'';
+        display:block;
+        clear:both;
+        width:0; height:0;
+        visibility:hidden;
+    }
+    /*순위표,관람수칙 영역*/
+    .rank_ruleWrap{
+        width:100%;
+        height:700px;
+        background-color: #0f204b;
+        position:relative;
+        margin-bottom: 50px;
+        background:url('../../images/main/1section_b.jpg') no-repeat center center/2520px 100%;
+    }
+    .rank_rule{
+        width:75%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position:absolute;
+        left:50%;
+        top:40%;
+        transform: translate(-50%,-40%);
+    }
+    .rank_rule>table{
+        width:54%;
+        height:400px;
+        background: #fff;
+        font-family: 'GmarketSansMedium';
+        border-collapse: collapse;
+    }
+    
+    .rank_rule>table td{
+        text-align:center;
+        margin:10px 0;
+        vertical-align: middle;
+        border-collapse: collapse;
+        transform: translateX(-.3px);
+        
+    }
+    .rank_top{background: #a88759; border-bottom:2px solid #333;}
+    .rank_top td{background:  #a88759; }
+    .rank_second{
+        background: #ddd;
+    }
+    .rank_second>td{
+        background: #ddd;
+    }
+    
+    .rule{
+        width:500px;
+        height:400px;
+        background: #fff;
+        text-align:center;
+        position:relative;
+        font-family: 'GmarketSansMedium'
+    }
+    .rule>ul{
+        position:absolute;
+        top:15%;
+        left:50%;
+        transform: translateX(-50%);
+        
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .rule>ul>li:nth-of-type(1){
+        width:200px;
+        height:40px;
+        line-height:40px;
+        background: black;
+        color:#fff;
+        margin-bottom:10px;
+    }
+    .rule>ul>li:nth-of-type(2){
+        width:200px;
+        height:40px;
+        line-height:40px;
+        border-radius:50px;
+        background: #ff0000;
+        color:#fff;
+        margin-bottom:50px;
+    }
+    .rule>ul>li:nth-of-type(3){
+        margin-bottom:50px;
+    }
+    .rule>ul>li:nth-of-type(4){
+        width:300px;
+        color:#ff0000;
+        font-size:2rem;
+        font-family: 'GmarketSansBold';
+    }
+    /*순위표 관람수칙 버튼 영역*/
+    .rank_btn{
+        width:54%; border-top:2px solid #333;
+        margin-bottom: 43px;
+        position:absolute;
+        bottom:-23%;
+    }
+    .rank_btn>a{
+        display:block;
+        width:100%;
+        height:50px;
+        line-height:50px;
+        background: #a88759;
+        color:black;
+        text-align:center;
+        font-family: 'GmarketSansMedium';
+    }
+    .rule_btn{
+        width:100%;
+        position: absolute;
+        bottom: -12.5%;
+        z-index: 9999999999999999;
+    }
+    .rule_btn>a{
+        display:block;
+        width:100%;
+        height:50px;
+        line-height:50px;
+        background: #ff0000;
+        color:#fff;
+        text-align:center;
+        font-family: 'GmarketSansMedium';
+    }
+    .rule_btn:hover a{
+        font-weight:bold;
+        color: #fff;
+        background: #000;
+    }
+    .rank_btn:hover{
+        font-weight: bold;
+        background: rgba(168,135,86,0.5);
+    }
+    
+    
+    
+    
+    
+    /*온라인샵 영역*/
+    .onlineShop{
+        width:100%;
+        height:700px;
+        background: #fff;
+        position:relative;
+        margin-top: 50px;
+    }
+    .productWrap{
+        width:75%;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        position:absolute;
+        left:50%;
+        bottom:10%;
+        transform: translateX(-50%);
+    }
+    .best_product{
+        width:58.33333333333333%;
+    }
+    .best_product>ul{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .best_product>ul>li{
+        margin-right:20px;
+        width:33.333333%;
+    }
+    .best_product>ul>li img{
+        width:100%;
+        height:270px;
+        cursor: pointer;
+    }
+    .best_product>ul>li img:hover{
+        transform: scale(1.1);
+        transition:all .3s;
+    }
+    .best_product>ul>li>p{
+        text-align:center;
+        margin-top:20px;
+        font-family: 'GmarketSansMedium'
+    }
+    .best_product>p{
+        font-weight:bold;
+        margin-bottom:30px;
+        font-size:2rem;
+        font-family: 'GmarketSansMedium'
+    }
+    .best_product>a{
+        display:block;
+        width:300px;
+        margin-bottom:30px;
+        font-family: 'GmarketSansMedium'
+    }
+    .new_item{
+        width:24.30555555555556%;
+    }
+    .new_item>ul>li{
+        position:relative;
+        margin-bottom: 20px;
+    }
+    .new_item>ul img{
+        width:100%;
+        height:390px;
+    }
+    
+    .new_item>ul>li::after{
+        content:'';
+        display:block;
+        width:100%;
+        height:390px;
+        background:url('../../images/main/shop_icon.png') center center/100px 100px no-repeat;
+        position:absolute;
+        bottom:0;
+        transition:all .6s;
+        opacity:0;
+        cursor: pointer;
+    }
+    
+    .new_item>ul>li::before{
+        content:'';
+        display:block;
+        width:100%;
+        height:390px;
+        background:#0f204b;
+        position:absolute;
+        bottom:0;
+        opacity:0;
+        transition:all .6s;
+        cursor: pointer;
+    }
+    .new_item>ul>li:hover::before{
+        opacity:.7;
+    }
+    .new_item>ul>li:hover::after{
+        opacity:1;
+    }
+    .new_item p{
+        text-align:center;
+        font-weight: bold;
+        margin-bottom:20px;
+        font-family: 'GmarketSansMedium'
+    }
+    .onlineShop>p{
+        position:absolute;
+        top:5%; left:12.5%;
+        font-weight:bold;
+        font-size:2.5rem;
+        font-family: 'GmarketSansMedium'
+    }
+    /*버튼 스타일*/
+    .shop_btn{
+        width:350px;
+        height:60px;
+        line-height:65px;
+        margin-bottom:50px;
+        background: #a88759;
+        padding-left:20px;
+    }
+    .shop_btn:hover{
+        background-color:#0f204b;
+        color: #fff;
+        transition: all .3s;
+    }
+    .shop_btn>a{
+        display:block;
+        width:100%;
+        color: #fff;
+        font-size:1.5rem;
+        font-family: 'GmarketSansMedium'
+    }
+    .new_btn{
+        margin:0 auto;
+        width:50%;
+        height:50px;
+        text-align:center;
+        background: #a88759;
+    }
+    .new_btn>a{
+        height: 50px;
+        line-height: 55px;
+        display:block;
+        width:100%;
+        color:#fff;
+        font-weight:bold;
+        font-family: 'GmarketSansMedium'
+    }
+    .new_btn:hover{
+        background: #0f204b;
+        color: #fff;
+        transition: all .3s;
+    }
+    
+    /*화살표 모양*/
+    .arrow{
+        margin-left:50px;
+        display:inline-block;
+        width:100px;
+        height:32px;
+        position:relative;
+    }
+    .arrow::before,.arrow::after{
+        content:'';
+        position:absolute;
+    }
+    .arrow::before{
+        width:100%;
+        height:100%;
+        border:2px solid #fff;
+        border-left:0;
+        border-right:0;
+        border-top:0;
+    }
+    .arrow::after{
+        width:30px;
+        height:2px;
+        background: #fff;
+        transform-origin:0 100%;
+        transform: rotate(45deg);
+        right:-8%;
+        bottom:60%;
+    }
+    
+    /*탑버튼*/
+    a#topBtn{ 
+        position: fixed;  
+        right: 2%; bottom: 2%; 
+        display: block;
+        z-index: 9999;
+        width:70px;
+        height:70px;
+        line-height:65px;
+        color:#fff;
+        font-size:1.2rem;
+        background: #a88759;
+        text-align:center;
+        border-radius:10px;
+        font-family: 'GmarketSansBold';
+        box-sizing: border-box;
+        border: 5px solid #a88759;
+    }
+    a#topBtn:hover{
+        background: rgba(15,32,75,1);
+        border: 5px solid #a88759;
+        color: #fff;
+    }
+    .NoticeAppInfo{
+        width:100%;
+        height:700px;
+        background: #111836;
+        position:relative;
+    }
+    .plus{
+        width: 20px;
+    }
+    .NAI_wrap{
+        width:75%;
+        display:flex;
+        position:absolute;
+        top:50%;
+        left:50%;
+        transform: translate(-50%,-50%);
+        justify-content: space-between;
+        align-items: center;
+    }
+    .Notice{
+        width:470px;
+        height:420px;
+        background: #fff;
+    }
+    .Notice>ul>li:nth-of-type(1){
+        height: 60px;
+        background: #a88759;
+        font-family: 'GmarketSansBold';
+        line-height: 60px;
+        font-size: 24px;
+        position: relative;
+    }
+    .Notice>ul>li:nth-of-type(1)>p{
+        position: absolute;
+        width: 100%;
+        left: 5%;
+        line-height: 65px;
+    }
+    .Notice>ul>li>a>img{
+        position: absolute;
+        top: 35%;
+        right: 5%;
+    }
+    
+    .Notice>ul>li:nth-of-type(2){
+        height: 90px;
+        background: #fff;
+        position: relative;
+    }
+    .Notice_left{
+        position: absolute;
+        left: 5%;
+        top:20%;
+        width: 50px;
+        height: 50px;
+        border: 2px solid #a88759;
+    }
+    .Notice_left>p{
+        font-family: 'GmarketSansBold';
+        text-align: center;
+        margin-top: 8px;
+    }
+    .Notice_right{
+        width: 80%;
+        position: absolute;
+        left: 28%;
+        top:30%;
+        height: 45px;
+        
+    }
+    .Notice_right>p{
+        width: 70%;
+        height: 45px;
+        font-size: 18px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display:inline-block;
+    }
+    .Notice_right>span{
+        font-size: 14px;
+        color: #555;
+        position: absolute;
+        left:0;
+        bottom:25%;
+    }
+    .Notice>ul>li:nth-of-type(4){
+        position: relative;
+        height: 90px;
+        background: #fff;
+    }
+    .Notice>ul>li:nth-of-type(3){
+        position: relative;
+        height: 90px;
+        background: #ddd;
+    }
+    .Notice>ul>li:nth-of-type(5){
+        position: relative;
+        height: 90px;
+        background: #ddd;
+    }
+    .App{
+        width:470px;
+        height:420px;
+        background: #000;
+        margin: 0 10px;
+    }
+    .Info{
+        width:470px;
+        height:420px;
+    
+    }
+    .Info01{
+        width:100%;
+        height:205px;
+        background: #e3e3e3;
+        margin-bottom:10px;
+    }
+    .Info02{
+        width:100%;
+        height:205px;
+        background: #e3e3e3;
+    }
+    
+    .App{
+        position:relative;
+        border:1px solid #fff;
+    }
+    .App>div>ul>li:first-child{
+        width:150px;
+        height:180px;
+        color:#fff;
+    }
+    .App>p{
+        font-weight:bold;
+        font-family: 'GmarketSansBold';
+        font-size:2rem;
+        text-align:center;
+        margin-top:50px;
+        margin-bottom:20px;
+        color:#fff;
+    }
+    .App>h3{
+        text-align:center;
+        font-family: 'GmarketSansMedium';
+        margin-bottom:20px;
+        color:#fff;
+    }
+    .App>ul{
+        width:75%;
+        height:50px;
+        display:flex;
+        justify-content: space-around;
+        align-items: center;
+        margin:0 auto;
+        font-family: 'GmarketSansMedium';
+    }
+    .App>ul>li{
+        text-align:center;
+        width:150px;
+        height:50px;
+        line-height:55px;
+        border:1px solid #fff;
+    }
+    .App>ul>li>a{
+        display:block;
+        width:100%;
+        height:100%;
+        color:#fff;
+    }
+    .App>div{
+        position:absolute;
+        bottom:0;
+        left:50%;
+        transform: translateX(-50%);
+    }
+    .App>div>ul{
+        position:relative;
+    }
+    .App>div>ul>li:last-child{
+        width:150px;
+        position:absolute;
+        bottom:10%;
+        color:#fff;
+        left:50%;
+        transform:translateX(-50%);
+        text-align:center;
+        font-family: 'GmarketSansMedium';
+        font-size:1rem;
+    }
+    .App>ul>li:hover a{
+        background: #0f204b;
+        color: #fff;
+    }
+    
+    
+    
+    
+    .Info01,.Info02{
+        display:flex;
+        justify-content: space-around;
+        align-items: center;
+        background: #e3e3e3;
+        cursor: pointer;
+    }
+    
+    .Info01>div:first-child,.Info02>div:first-child{
+        width:50%;
+        height:200px;
+        overflow:hidden;
+        text-overflow:ellipsis;
+    }
+    .Info01>div>p,.Info02>div>p{
+        font-family: 'GmarketSansBold';
+        font-size:1.5rem;
+        margin-top:45px;
+        margin-bottom:20px;
+    }
+    .Info01>div>h4{
+        font-size:16px;
+        width:100%;
+        white-space: nowrap;
+        overflow:hidden;
+        text-overflow: ellipsis;
+        line-height: 1.3;
+    }
+    .Info01:hover{
+        background: rgba(255,255,255,.7);
+    }
+    .Info02:hover{
+        background: rgba(255,255,255,.7);
+        
+    }
+    
+    
+    .Info02>div>h3{
+        font-size:16px;
+        width:80%;
+        margin-top:30px;
+        white-space: nowrap;
+        overflow:hidden;
+        text-overflow: ellipsis;
+        line-height: 1.3;
+    }
+    .Info01>div:nth-of-type(2){
+        border-radius:50%;
+    }
+    .Info01>div:nth-of-type(2)>a{
+        display:block;
+        width:150px;
+        height:150px;
+        border:6px solid transparent; 
+        border-radius:50%;
+        background:url('../../images/main/circle01.png') no-repeat center center/105%;
+    }
+    .Info01>div:nth-of-type(2)>a:hover{
+        border-color:#a88759;
+        transition:all .6s;
+    }
+    .Info02>div:nth-of-type(2){
+        border-radius:50%;
+    }
+    .Info02>div:nth-of-type(2)>a{
+        display:block;
+        width:150px;
+        height:150px;
+        border:6px solid transparent; 
+        border-radius:50%;
+        background:url('../../images/main/circle02.png') no-repeat center center/105%;
+    }
+    .Info02>div:nth-of-type(2)>a:hover{
+        border-color:#a88759;
+        transition:all .6s;
+    }
+    .Info01:hover{
+        background: rgba(255,255,255,.7);
+    }
+    .sns_contents{
+        width:100%;
+        height:800px;
+        background: #fff;
+        position:relative;
+    }
+    .sns_contents>p{
+        text-align: center;
+        margin: 100px 0;
+        font-family: 'GmarketSansBold';
+        font-size: 36px;
+    }
+    .sns_wrap{
+        width:75%;
+        height:542px;
+        position:absolute;
+        top:50%; left:50%;
+        transform: translate(-50%,-50%);
+    }
+    
+    
+    .sns_top{
+        width:100%;
+    }
+    .sns_top>ul,.sns_bottom>ul{
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .sns_top>ul>li>a{
+        display:block;
+        width:100%;
+        height:100%;
+    }
+    
+    .sns_top>ul>li>img{
+        position: absolute;
+        top: 2%;
+        left: 2%;
+        cursor: pointer;
+     
+    }
+    
+    .sns_top>ul>li>img{
+        position: absolute;
+        top: 2%;
+        left: 2%;
+     
+    }
+    .sns_top>ul>li:hover::after{
+        opacity:1;
+        transition:all .3s;
+    }
+    .sns_top>ul>li:hover .trans_img{
+        display:none;
+    }
+    
+    
+    .sns_top>ul>li::after{
+        content:'';
+        display:block;
+        position:absolute;
+        top:2%; left:2%;
+        width:40px; height:40px;
+        background: url('../../images/main/youtube_color.png') center center/40px 40px;
+        opacity:0;
+        z-index: 99999;
+    }
+    
+    .sns_top>ul>li{
+        width:24.30555555555556%;
+        height:230px;
+        background: #ddd;
+        position:relative;
+        overflow:hidden;
+    }
+    .sns_top>ul>li>a>img{
+        width: 100%;
+        height: 100%;
+    }
+    .sns_top>ul>li:hover{
+        border: 4px solid;
+        border-image: linear-gradient(to right, #e73350, #e73350, #000);
+        border-image-slice: 1;
+        box-sizing: border-box;
+    }
+    .sns_top>ul>li>a::before{
+        content:'';
+        display:block;
+        width:100%;
+        height:100%;
+        position:absolute;
+        background:black;
+        opacity:0;
+        transition:all 0.5s;
+        z-index: 99999;
+    }
+    .sns_top>ul>li>a:hover::before{
+        opacity:0.4;
+    }
+    .sns_top>ul>li>p{
+        width:100%;
+        height:30px;
+        position:absolute;
+        bottom:-100px;
+        color:#fff;
+        font-family: 'GmarketSansBold';
+        text-align:center;
+        z-index: 9999999999999;
+        font-size: 14px;
+    }
+    .sns_top>ul>li:hover p{
+        bottom:0;
+        transition:all .6s;
+        
+    }
+    
+    
+    .sns_bottom>ul>li>img{
+        position: absolute;
+        top: 2%;
+        left: 2%;
+        cursor: pointer;
+    }
+    
+    .sns_bottom>ul>li:hover::after{
+        opacity:1;
+        transition:all .3s;
+    }
+    .sns_bottom>ul>li:hover .trans_img{
+        display:none;
+    }
+    .sns_bottom>ul>li::after{
+        content:'';
+        display:block;
+        position:absolute;
+        top:2%; left:2%;
+        width:40px; height:40px;
+        background: url('../../images/main/insta_color.png') center center/40px 40px;
+        opacity:0;
+    }
+    
+    
+    .sns_bottom{
+        width:100%; margin-top:12px;
+    }
+    
+    .sns_bottom>ul>li{
+        width:32.7%;
+        height:300px;
+        background: #ddd;
+        position:relative;
+        overflow:hidden;
+    }
+    
+    .sns_bottom>ul>li>a>img{
+        width: 100%;
+        height: 100%;
+    }
+    
+    .sns_bottom>ul>li:hover{
+        border: 4px solid;
+        border-image: linear-gradient(to right, #712e96, #e73350, #f98531);
+        border-image-slice: 1;
+        box-sizing: border-box;
+    }
+    
+    .sns_bottom>ul>li>a::before{
+        content:'';
+        display:block;
+        width:100%;
+        height:100%;
+        position:absolute;
+        background:black;
+        opacity:0;
+        transition:all 0.5s;
+    }
+    .sns_bottom>ul>li>a:hover::before{
+        opacity:0.4;
+    }
+    .sns_bottom>ul>li>p{
+        width:100%;
+        height:30px;
+        position:absolute;
+        bottom:-100px;
+        color:#fff;
+        font-family: 'GmarketSansBold';
+        font-size: 16px;
+        text-align:center;
+        z-index: 9999999999999;
+        
+     
+    }
+    .sns_bottom>ul>li:hover p{
+        bottom:0;
+        transition:all .6s;
+        display:block;
+    }
+    
+    .sns_choice{
+        margin: 10px 0px;
+        width: 100%;
+        height: 130px;
+    }
+    .sns_choice>p{
+        font-family: 'GmarketSansBold';
+        font-size: 30px;
+        text-align: center;
+    }
+    .sns_bottom_img>ul>li{
+        margin: 50px 30px;
+        float: left;
+    }
+    .sns_bottom_img>ul>li>a>img{
+        width: 100px;
+        height: 100px;
+    }
+    .sns_bottom_img{
+        width: 100%;
+        margin: 0 auto;
+        position: relative;
+    }
+    .sns_bottom_img>ul{
+        position: absolute;
+        left:50%;
+        transform: translateX(-50%);
+    }
+    .sns_bottom_img::after{
+        content:'';
+        display:block;
+        clear:both;
+        width:0; height:0;
+        visibility:hidden;
+    }
+    
+    .partner{
+        width:100%;
+        height:200px;
+        margin-top:300px;
+    }
+    .partner>p{
+        font-size:30px;
+        text-align:center;
+        font-family: 'GmarketSansBold';
+    }
+    .partner_img{
+        margin-top:60px;
+        width:60%;
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: nowrap;
+        margin:0 auto;
+    }
+    .partner_img>li{
+        margin-top:60px;
+    }
+    .partner_img>li>a>img{
+        width:100%;
+        height:70px;
+    }
+    /*푸터 영역*/
+    footer{
+        margin-top: 100px;
+        width: 100%;
+        height: 300px;
+        background: #0f204b;
+    }
+    .footer_top>li>a{
+        display:block;
+        color: #fff;
+        font-size: 16px;
+        margin-top:30px;
+        font-family: 'GmarketSansMedium';
+    }
+    .footer_top{
+        width:60%;
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: nowrap;
+        margin:0 auto;
+    }
+    .line{
+        margin-top: 30px;
+        width: 100%;
+        height: 2px;
+        background: #fff;
+    }
+    .footer_bottom>ul>li>a>img{
+        width: 200px;
+        height: 65px;
+    }
+    .footer_bottom>ul>li:nth-of-type(2){
+        color:#fff;
+        font-size:14px;
+        text-align:center;
+        font-family: 'GmarketSansMedium';
+    }
+    .footer_sns{
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: nowrap;
+        margin:0 auto;
+    }
+    .footer_sns>li{
+        margin-left:10px;
+    }
+    .footer_bottom{
+        margin-top:80px;
+    }
+    .footer_bottom>ul{
+        width:65%;
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: nowrap;
+        margin:0 auto;
+    }
+    .footer_top>li>a:hover{
+        font-family: 'GmarketSansBold';
+        color:#a88759;  
+    }
+    
+    /*모달*/
+    .modal{
+        position:fixed;
+        z-index: 9999;
+        left:50%; 
+        transform: translate(-50%,-50%);
+        top:50%;
+        display:none;
+        z-index: 9999999999;
+        border: 3px solid #fff;
+        height: 629px;
+    }
+    
+    .modal_background{
+        position:fixed;
+        top:0;
+        width:100%; height:100%;
+        background:rgba(0,0,0,0.6);
+        display:none;
+        z-index: 999999;
+    }
+    .modal>p{
+        width:50px;
+        height:30px;
+        background: #000;
+        color:#fff;
+        padding-left: 550px;
+        font-size: 14px;
+        font-weight: bold;
+        line-height: 25px;
+        cursor: pointer;
+        border-top:2px solid #fff;
+        position: absolute;
+        bottom: -1px;
+    
+    }
+    .sns_bottom_img>ul>li>a>img:hover{
+        margin-top: -10px;
+        transition:all .3s;
+    }
+    
+    
+
+/*슬라이드 배너 캐롯셀,동그라미 버튼 숨김*/
+    .controller,.prev,.fa-angle-right:before{
+        display:none;
+    }
+
+ }
